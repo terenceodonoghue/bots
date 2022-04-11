@@ -67,6 +67,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@terenceodonoghue/bots@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@terenceodonoghue/bots@workspace:."
+  dependencies:
+    "@typescript-eslint/eslint-plugin": ^5.17.0
+    "@typescript-eslint/parser": ^5.17.0
+    eslint: ^8.12.0
+    eslint-config-airbnb-base: ^15.0.0
+    eslint-plugin-import: ^2.25.4
+  languageName: unknown
+  linkType: soft
+
 "@types/json-schema@npm:^7.0.9":
   version: 7.0.11
   resolution: "@types/json-schema@npm:7.0.11"
@@ -288,18 +300,6 @@ __metadata:
   checksum: 9706c088a283058a8a99e0bf91b0a2f75497f185980d9ffa8b304de1d9e58ebda7c72c07ebf01dadedaac5b2907b2c6f566f660d62bd336c3468e960403b9d65
   languageName: node
   linkType: hard
-
-"bots@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "bots@workspace:."
-  dependencies:
-    "@typescript-eslint/eslint-plugin": ^5.17.0
-    "@typescript-eslint/parser": ^5.17.0
-    eslint: ^8.12.0
-    eslint-config-airbnb-base: ^15.0.0
-    eslint-plugin-import: ^2.25.4
-  languageName: unknown
-  linkType: soft
 
 "brace-expansion@npm:^1.1.7":
   version: 1.1.11
