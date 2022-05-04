@@ -1,0 +1,41 @@
+{
+  "name": "@terenceodonoghue/slack-haikubot",
+  "version": "0.0.0",
+  "description": "I detect haikus",
+  "main": "index.js",
+  "repository": "git@github.com:terenceodonoghue/slack-haikubot.git",
+  "author": "Terence O'Donoghue <1697905+terenceodonoghue@users.noreply.github.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "17.x"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon src/index.ts",
+    "eslint-check": "npx eslint-config-prettier src/index.ts",
+    "lint": "eslint --ext .ts ./src",
+    "prebuild": "rimraf dist",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.18.0",
+    "@slack/bolt": "^3.4.0",
+    "@types/dotenv-safe": "^8.1.1",
+    "dotenv-safe": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.3.3",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "eslint": "^7.31.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.3.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  }
+}
