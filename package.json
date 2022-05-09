@@ -5,6 +5,8 @@
     "apps/*"
   ],
   "devDependencies": {
+    "@nrwl/cli": "latest",
+    "@nrwl/workspace": "latest",
     "@terenceodonoghue/prettier-plugin-packagejson": "^1.0.1",
     "@types/node": "^17.0.31",
     "@typescript-eslint/eslint-plugin": "^5.22.0",
@@ -14,6 +16,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "nx": "latest",
     "prettier": "^2.6.2"
   },
   "packageManager": "yarn@3.2.0"

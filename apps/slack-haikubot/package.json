@@ -1,21 +1,11 @@
 {
   "name": "@terenceodonoghue/slack-haikubot",
-  "version": "0.0.0",
-  "description": "I detect haikus",
-  "repository": {
-    "type": "git",
-    "url": "ssh://git@github.com/terenceodonoghue/bots.git",
-    "directory": "apps/slack-haikubot"
-  },
-  "license": "MIT",
-  "author": "Terence O'Donoghue <1697905+terenceodonoghue@users.noreply.github.com>",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "prebuild": "rimraf dist",
     "build": "tsc",
+    "clean": "rimraf dist",
     "dev": "nodemon src/index.ts",
-    "eslint-check": "npx eslint-config-prettier src/index.ts",
-    "lint": "eslint --ext .ts ./src",
+    "lint": "eslint --ext .ts --ignore-path ../../.eslintignore --max-warnings=0 ./src",
     "start": "node dist/index.js"
   },
   "dependencies": {
