@@ -1,0 +1,40 @@
+{
+  "name": "@terenceodonoghue/slack-haikubot",
+  "version": "0.0.0",
+  "description": "I detect haikus",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/terenceodonoghue/bots.git",
+    "directory": "apps/slack-haikubot"
+  },
+  "license": "MIT",
+  "author": "Terence O'Donoghue <1697905+terenceodonoghue@users.noreply.github.com>",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "dev": "nodemon src/index.ts",
+    "eslint-check": "npx eslint-config-prettier src/index.ts",
+    "lint": "eslint --ext .ts ./src",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.85.0",
+    "@slack/bolt": "^3.11.0",
+    "@types/dotenv-safe": "^8.1.2",
+    "dotenv-safe": "^8.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "nodemon": "^2.0.16",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  },
+  "peerDependencies": {
+    "@types/node": "*"
+  },
+  "engines": {
+    "node": "17.x"
+  }
+}
