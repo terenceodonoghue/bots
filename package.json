@@ -2,7 +2,8 @@
   "name": "@terenceodonoghue/bots",
   "private": true,
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "packages/*"
   ],
   "devDependencies": {
     "@nrwl/cli": "latest",
