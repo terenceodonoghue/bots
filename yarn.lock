@@ -1927,19 +1927,49 @@ __metadata:
   dependencies:
     "@nrwl/cli": latest
     "@nrwl/workspace": latest
+    "@terenceodonoghue/eslint-config-node": ^1.0.0
     "@terenceodonoghue/prettier-plugin-packagejson": ^1.0.1
     "@types/node": ^17.0.31
     "@typescript-eslint/eslint-plugin": ^5.22.0
     "@typescript-eslint/parser": ^5.22.0
     eslint: ^8.15.0
-    eslint-config-airbnb-base: ^15.0.0
-    eslint-config-prettier: ^8.5.0
     eslint-plugin-import: ^2.26.0
     eslint-plugin-prettier: ^4.0.0
     nx: latest
     prettier: ^2.6.2
   languageName: unknown
   linkType: soft
+
+"@terenceodonoghue/eslint-config-node@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@terenceodonoghue/eslint-config-node@npm:1.0.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40terenceodonoghue%2Feslint-config-node%2F1.0.0%2F77cd2f72ce32cded3ecb6bf34966ea7f80d9b2596d31e8f89318b29864130464"
+  dependencies:
+    "@terenceodonoghue/eslint-config": ^1.0.0
+    eslint-config-airbnb-base: ^15.0.0
+  peerDependencies:
+    "@typescript-eslint/eslint-plugin": "*"
+    "@typescript-eslint/parser": "*"
+    eslint: ">= 8"
+    eslint-plugin-import: "*"
+    eslint-plugin-prettier: "*"
+  checksum: dcf575bee9638cd77585f4e84ea0dd10c98b5d040d2fece1bda81d24a833894f084d45d0b227395315f5064ecb89d2936ec7543177cc01f7059fadd63e007811
+  languageName: node
+  linkType: hard
+
+"@terenceodonoghue/eslint-config@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@terenceodonoghue/eslint-config@npm:1.0.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40terenceodonoghue%2Feslint-config%2F1.0.0%2Fff1b3ad774230cd754f3fe12d13300369c191ea8ce59afaa8bcc44041d81fff2"
+  dependencies:
+    eslint-config-prettier: ^8.5.0
+  peerDependencies:
+    "@typescript-eslint/eslint-plugin": "*"
+    "@typescript-eslint/parser": "*"
+    eslint: ">= 8"
+    eslint-plugin-import: "*"
+    eslint-plugin-prettier: "*"
+  checksum: ca537355f854709b34c4aa369df563379f43a93e9bb0c920cd319f62cec1b37699bb3d32cf6a3405f4fa23a7a3cfd5cacfe9b2bf60d7a90f404797bdaadf87c9
+  languageName: node
+  linkType: hard
 
 "@terenceodonoghue/prettier-plugin-packagejson@npm:^1.0.1":
   version: 1.0.1
